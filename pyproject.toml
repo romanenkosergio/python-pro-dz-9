@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pyrhonpro-dz-9"
+version = "0.1.0"
+description = ""
+authors = ["Serhii Romanenko <sergromanenko97@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pythonpro_dz_9"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.1"
+celery = "^5.2.7"
+phonenumbers = "^8.13.11"
+twilio = "^8.2.0"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

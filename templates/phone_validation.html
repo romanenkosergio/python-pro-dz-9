@@ -1,0 +1,10 @@
+{% extends 'extends/base.html' %}
+
+{% block content %}
+<h1>Validation Form</h1>
+    <form action="{% url "validation_view" %}" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
